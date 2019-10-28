@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Alegreya', serif;;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.6)
+    ), url('https://cdn.dribbble.com/users/13449/screenshots/1828176/attachments/304147/Lakeside_Sunset_1920x1080.jpg');
+  background-size: cover;
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    height: 100vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.6)
+    ), url('https://i.pinimg.com/564x/27/6d/d5/276dd5b62fc9958b836a692570a8df8c.jpg');
+    background-size: cover;
+  }
+
+}

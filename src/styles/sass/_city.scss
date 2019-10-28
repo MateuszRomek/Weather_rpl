@@ -1,0 +1,89 @@
+.city--active {
+  display: block !important;
+}
+.city {
+  display: none;
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), 
+  rgba(0, 0, 0, 0.9));
+  font-size: 25px;
+  z-index: 10;
+}
+  .city__header {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 400;
+    margin: 10px;
+  }
+  .city__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+.center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form__input {
+  color: white;
+  margin: 15px;
+  background: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.form__button {
+  background: transparent;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  color: white;
+  font-size: 1em;
+  font-weight: 550;
+  width: 40%;
+}
+::placeholder {
+  color: white;
+  font-size: .9em;
+}
+
+.city--active .city__form {
+  animation: formAnimation .4s;
+}
+.city--active .city__header {
+animation: fadeIn .4s .5s backwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes formAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  80% {
+    opacity: .7;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

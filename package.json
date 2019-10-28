@@ -1,0 +1,31 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Simply weather app",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateuszRom/Weather_rpl.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Mateusz R",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MateuszRom/Weather_rpl/issues"
+  },
+  "homepage": "https://github.com/MateuszRom/Weather_rpl#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "normalize-css": "^2.3.1"
+  }
+}
