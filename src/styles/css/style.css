@@ -1,5 +1,6 @@
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
 *, *::before, *::after {
   box-sizing: inherit; }
@@ -171,6 +172,9 @@ body {
   grid-template-rows: repeat(3, 1fr);
   height: 100%; }
 
+.weather--active {
+  display: grid; }
+
 .currentDate {
   align-self: flex-start;
   grid-column: 1/2;
@@ -271,7 +275,9 @@ body {
   .currentDate {
     display: none; }
   .flexy {
-    margin: 0; }
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.315);
+    border-width: 60%; }
   .tomorrow {
     grid-row: 2/3;
     width: 100vw; }
@@ -293,11 +299,11 @@ body {
       font-size: 1.1em;
       width: inherit; }
   .day__icon {
-    font-size: .8em; }
-  .day__temperature {
     font-size: 1em; }
+  .day__temperature {
+    font-size: 1.8em; }
   .day__name {
-    font-size: .9em; }
+    font-size: 1.4em; }
   .tomorrow::after,
   .thirdDay::after {
     display: none; }
